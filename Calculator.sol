@@ -6,10 +6,10 @@ import "contracts/calc.sol";
 import "@openzeppelin/contracts/utils/Strings.sol";
 
 /**
- * @title Owner
- * @dev Set & change owner
+ * @title Calculator
+ * @dev Ahmed Hesham
  */
-contract Owner {
+contract Calculator {
 
     address private owner;
     int256 private firstNum;
