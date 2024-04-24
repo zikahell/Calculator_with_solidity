@@ -32,14 +32,14 @@ library Mathh{
                 return ress;
             }
              else {
-                int256 r = firstNum/secondNum;
-                string memory re = Strings.toStringSigned(r);
-                bytes memory b = bytes(re);
+                int256 qoutient = firstNum/secondNum;
+                string memory CAST_STRING_QOTIENT = Strings.toStringSigned(qoutient);
+                bytes memory CAST_BYTES_QOTIENT = bytes(CAST_STRING_QOTIENT);
                  int256 res = firstNum*(10) / secondNum;
-                 string memory   ress = Strings.toStringSigned(res);
-                 bytes memory resss = bytes(ress);
-                 bytes1  reminder = getLastLetter(resss); 
-                 bytes memory result = concatenateStings(concatenateStings(b,"."), reminder);
+                 string memory CAST_STRING_RES = Strings.toStringSigned(res);
+                 bytes memory CAST_BYTES_RES = bytes(CAST_STRING_RES);
+                 bytes1  remainder = getLastLetter(CAST_BYTES_RES); 
+                 bytes memory result = concatenateStings(concatenateStings(CAST_BYTES_QOTIENT,"."), remainder);
                  return string(result);
             }
         }
