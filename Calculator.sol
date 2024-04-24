@@ -23,7 +23,12 @@ contract Owner {
         _;
     }
 
-    constructo
+    constructor() {
+        
+        owner = msg.sender; // 'msg.sender' is sender of current call, contract deployer for a constructor
+        
+    }
+    
     
 
 
